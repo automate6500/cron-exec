@@ -44,8 +44,7 @@ jobs:
             # Ensure today is Wednesday (3). If not, exit.
             if [ "$CURRENT_WEEKDAY" -ne 3 ]; then
                 echo "This script should only be run on a Wednesday."
-                return 1
-                # exit 1 # Use this line instead of the previous line if you want to exit the script
+                exit 1
             fi
             
             # Calculate which Wednesday of the month this is
